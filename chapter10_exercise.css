@@ -14,9 +14,16 @@ header {
 
 main {
   display: flex;
-  justify-content: center;
   margin: 50px auto;
   width: 960px;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    display: block;
+    margin: 50px auto;
+    width: auto;
+  }
 }
 
   .main-item {
@@ -26,14 +33,30 @@ main {
     margin-right: 30px
   }
 
-  .main-item:last-child {
-    margin-right: 0;
+  @media screen and (max-width: 768px) {
+    .main-item {
+      width: 90%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    .main-item:last-child {
+      margin-right: 0;
+    }
   }
 
       .main-image {
         height: 150px;
         margin: 10px;
       }
+
+      /*@media screen and (max-width: 768px) {
+        .main-image {
+          height: 150px;
+        }
+      }*/
 
       .image1 {
         background-image: url(./img/flow01.png);
