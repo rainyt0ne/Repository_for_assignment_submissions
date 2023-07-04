@@ -1,0 +1,79 @@
+/*課題1スタート*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: auto;
+  height: 50px;
+  background-color: #FF9A4B;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+  width: 960px;
+}
+
+  .main-item {
+    width: 300px;
+    background-color: #AAAAAA;
+    position: relative;
+    margin-right: 30px
+  }
+
+  .main-item:last-child {
+    margin-right: 0;
+  }
+
+      .main-image {
+        height: 150px;
+        margin: 10px;
+      }
+
+      .image1 {
+        background-image: url(./img/flow01.png);
+        background-position: bottom;
+        background-size: cover;
+      }
+
+      .image2 {
+        background-image: url(./img/flow02.png);
+        background-position: bottom;
+        background-size: cover;
+      }
+
+      .image3 {
+        background-image: url(./img/flow03.png);
+        background-position: bottom;
+        background-size: cover;
+      }
+
+      .sub-title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #FFFFFF;
+        background-color: #FF9A4B;
+        letter-spacing: 1px;
+      }
+
+      .main-title {
+        margin-top: 5px;
+        margin-left: 10px
+      }
+
+      .main-text {
+        margin: 10px;
+        font-size: 12px;
+      }
+
+footer {
+  background-color: #AAAAAA;
+  width: auto;
+  height: 50px;
+}
